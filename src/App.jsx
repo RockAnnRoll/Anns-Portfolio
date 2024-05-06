@@ -11,19 +11,21 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ThemeWrapper from './components/ThemeWrapper';
-import ToggleButton from './components/ToggleButton';
+import './App.css';
+import MainContent from './components/MainContent';
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <ThemeWrapper> {/* Använd ThemeWrapper här */}
-          <ToggleButton /> {/* Lägg till ToggleButton här */}
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+        <ThemeWrapper>
+          <MainContent>
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </MainContent>
         </ThemeWrapper>
       </BrowserRouter>
     </Provider>

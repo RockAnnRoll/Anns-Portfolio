@@ -1,5 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+
 *{
   box-sizing:border-box;
   margin: 0; 
   padding:0; 
    }
+
+
+   body {
+    background-color: rgb(247, 247, 243);
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:  "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+   justify-content: center;
+
+ 
+  
+   
+   }
+
+   .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  
+  
+  .light-mode {
+    background-color: beige;
+    color: #000;
+  }
+
+  .UpperHeader{
+    display:flex;
+    justify-content: end;
+    padding-right: 40px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+  }
+
+  .AllHeader{
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-weight: 500;
+    padding: 30px;
+  }
+  
+  h3 {
+    font-weight: 400;
+    padding: 5px;
+  }
+  
+  .top-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centrerar innehållet i top-container */
+    align-items: center;
+  }
+  
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav a {
+    text-align: center;
+    padding: 0 10px;
+    flex: 1;
+  }
+
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+
+
+}
+
+
+
+
+.project-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.project-name {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  font-size: 1em;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 100px; /* Lägger till horisontell padding */
+  overflow: hidden;
+}

@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import GitHubAnn from '../components/GitHubAnn';
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div>
+      < GitHubAnn/>
+    </div>
   )
 }
 

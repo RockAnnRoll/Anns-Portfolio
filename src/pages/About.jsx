@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import AboutMe from '../components/AboutMe';
 
 function About() {
   return (
-   <h2>Test test</h2>
-  )
+    <div>
+      <AboutMe />
+    </div>
+  );
 }
 
-export default About
+export default About;
