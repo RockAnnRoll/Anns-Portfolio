@@ -1,11 +1,7 @@
-import React from 'react'
-
+import React from "react";
 
 function MainContent({ children }) {
-    return <div className="main-content">{children}</div>;
-  }
+  return <div className="main-content">{children}</div>;
+}
 
-export default MainContent
-
-
-
+export default MainContent;

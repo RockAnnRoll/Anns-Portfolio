@@ -1,12 +1,14 @@
-import React from 'react';
-import GitHubAnn from '../components/GitHubAnn';
+import React from "react";
+import GitHubAnn from "../components/GitHubAnn";
+import SubHeader from "../components/SubHeader";
 
 function Projects() {
   return (
     <div>
-      < GitHubAnn/>
+      <SubHeader text="Projekt GitHub" />
+      <GitHubAnn />
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

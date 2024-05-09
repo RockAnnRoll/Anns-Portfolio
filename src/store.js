@@ -7,3 +7,5 @@ import themeReducer from '../features/themes/themeSlice';
      },
    });
    
+
+   //Konfigurerar Redux store med configureStore från Redux Toolkit. ThemeReducer registreras som en del av storens reducer.

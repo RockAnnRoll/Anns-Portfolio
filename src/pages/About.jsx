@@ -1,5 +1,5 @@
-import React from 'react';
-import AboutMe from '../components/AboutMe';
+import React from "react";
+import AboutMe from "../components/AboutMe";
 
 function About() {
   return (

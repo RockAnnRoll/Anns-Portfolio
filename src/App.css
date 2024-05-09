@@ -1,103 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
 
+/***** All elements/ Body *****/
 
-*{
-  box-sizing:border-box;
-  margin: 0; 
-  padding:0; 
-   }
-
-
-   body {
-    background-color: rgb(247, 247, 243);
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family:  "Barlow", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    display: flex;
-   justify-content: center;
-
- 
-  
-   
-   }
-
-   .dark-mode {
-    background-color: #333;
-    color: #fff;
-  }
-
-  
-  
-  .light-mode {
-    background-color: beige;
-    color: #000;
-  }
-
-  .UpperHeader{
-    display:flex;
-    justify-content: end;
-    padding-right: 40px;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  
-  }
-
-  .AllHeader{
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
-
-  h1 {
-    font-weight: 500;
-    padding: 30px;
-  }
-  
-  h3 {
-    font-weight: 400;
-    padding: 5px;
-  }
-  
-  .top-container {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Centrerar innehållet i top-container */
-    align-items: center;
-  }
-  
-  
-  .nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav a {
-    text-align: center;
-    padding: 0 10px;
-    flex: 1;
-  }
-
-.footer {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  padding-right: 30px;
-
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: rgb(247, 247, 243);
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+}
+
+/***** Darkmode/Lightmode *****/
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: beige;
+  color: #000;
+}
+
+.dark-mode a {
+  color: #bbb;
+}
+
+.light-mode a {
+  color: #0077cc;
+}
+
+.lightDark-Btn {
+  border: solid 2px #e2e2e7;
+  font-size: small;
+  background-color: #5c6f67;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lightDark-Btn:hover {
+  background-color: #2d554b;
+}
+
+/***** Header *****/
 
 
+.all-header {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.upper-header {
+  display: flex;
+  justify-content: end;
+  padding-right: 40px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 500;
+  padding: 30px;
+  font-size: 5rem;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav a {
+  text-align: center;
+  background-color: #796972;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/***** About me-page *****/
+
+.all-about-me p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/***** Projects-page *****/
 
 .project-item {
   margin-bottom: 20px;
@@ -105,22 +120,24 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
+  margin-top: 20px;
 }
 
 .project-name {
   color: #333;
-  font-size: 1.5em;
+  font-size: 1 em;
   margin-bottom: 5px;
+  font-weight: 300;
 }
 
 .project-description {
-  font-size: 1em;
+  font-size: medium;
   color: #666;
   margin-bottom: 10px;
 }
 
 .project-link {
-  font-size: 1em;
+  font-size: medium;
   color: #0077cc;
   text-decoration: none;
 }
@@ -129,6 +146,69 @@
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 100px; /* Lägger till horisontell padding */
-  overflow: hidden;
+  padding: 0 100px;
+}
+
+/****** Contact-page *****/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-btn {
+  background-color: #5c6f67;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #2d554b;
+}
+
+.contact-details {
+  margin-top: 10px;
+}
+
+.message-textarea {
+  width: 100%;
+  height: 100px; /* Justera höjden efter behov */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/***** Footer ******/
+
+.footer {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: #bcbaba 1px solid;
+  margin-top: 30px;
+  align-items: end;
+}
+
+.footer-text{
+  margin-right: 30px; 
 }
